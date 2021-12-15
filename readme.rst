@@ -1,5 +1,6 @@
-simple todo list application based on codeigniter and jQuery
+task mangement
 
-made this for them who are new to codeigniter.
+crate local folder with name tranzila_test
+create db with name db_todolist and insert the sql file inside database in root
 
-create database named db_todolist and import the sql file on the database folder
+good day
