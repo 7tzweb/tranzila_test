@@ -1,2 +1,0 @@
-# tranzila_test
- 

@@ -13,16 +13,23 @@
 
 	//baseurl
 	$baseurl = $_SERVER['REQUEST_URI'];
-	$arr_url = explode("&v=",$baseurl);
-	$baseurl = $arr_url[0];
+	$v ='';
+	if (strpos($baseurl, '&v=') !== false) {
+		$arr_url = explode("&v=",$baseurl);
+		$baseurl = $arr_url[0];
+		//url get varable view
+		if ($_GET['v']) {
+			$v = $_GET['v'];
+		}else{
+
+		}
+	}
 	
-	//url get varable view
-	$v = $_GET['v'];
 ?>
 	<head>
 		<meta charset="utf-8">
-		<meta name="author" content="Jose Purba"/>
-		<meta name="creator" content="Jose Purba"/>
+		<meta name="author" content="Tsohar zigdon"/>
+		<meta name="creator" content="Tsohar zigdon"/>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1"/>
 		<title><?php echo $title; ?></title>

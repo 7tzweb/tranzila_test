@@ -9,7 +9,7 @@ class IndexController extends CI_Controller {
 	}
 
 	public function index() {
-		$data['title'] = "Todolist by Jose Purba";
+		$data['title'] = "Todolist by Tsohar zigdon";
 		$data['todos'] = $this->Main_model->get_todos();
 		$this->load->view('index',$data);
 	}
